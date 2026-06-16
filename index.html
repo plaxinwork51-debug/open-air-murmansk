@@ -3,590 +3,329 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Северный Звук — выездной диджей с аппаратурой на праздник · Мурманск и область</title>
+<title>Северный Звук — выездной диджей с аппаратурой на праздник · Мурманск</title>
 <meta name="description" content="Выездной диджей «Северного Звука» приезжает со своим звуком и светом на ваш праздник: день рождения, свадьба, корпоратив, open-air. Мурманск и область. От 20 000 ₽.">
-<meta name="theme-color" content="#48C8FF">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Северный Звук">
 <meta property="og:url" content="https://plaxinwork51-debug.github.io/open-air-murmansk/">
 <meta property="og:title" content="Северный Звук — выездной диджей с аппаратурой на праздник">
-<meta property="og:description" content="Музыка, которая едет к вам: звук, свет и диджеи под ваше событие. День рождения, свадьба, корпоратив, open-air. Мурманск и область. От 20 000 ₽.">
+<meta property="og:description" content="Звук, свет и диджеи под ваше событие. День рождения, свадьба, корпоратив, open-air. Мурманск и область. От 20 000 ₽.">
 <meta property="og:image" content="https://plaxinwork51-debug.github.io/open-air-murmansk/images/og.jpg">
 <meta property="og:image:secure_url" content="https://plaxinwork51-debug.github.io/open-air-murmansk/images/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Северный Звук — выездной диджей на празднике под открытым небом">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Северный Звук — выездной диджей с аппаратурой">
-<meta name="twitter:description" content="Звук, свет и диджеи под ваше событие. ДР, свадьба, корпоратив, open-air. Мурманск и область. От 20 000 ₽.">
+<meta name="twitter:description" content="Звук, свет и диджеи под ваше событие. ДР, свадьба, корпоратив, open-air. От 20 000 ₽.">
 <meta name="twitter:image" content="https://plaxinwork51-debug.github.io/open-air-murmansk/images/og.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#FFFFFF;
-    --bg-polar:linear-gradient(180deg,#FFFFFF 0%,#EEF4FB 50%,#DCE9F7 100%);
-    --surface:#F4F7F9;
-    --platina:#E7EBEE;
-    --platina-deep:#D6DCE1;
-    --ink:#0A0B0D;
-    --graphite:#15171A;
-    --muted:#4C545F;
-    --accent:#48C8FF;
-    --accent-ink:#0B7FB8;
-    --glow:#AECBF2;
-    --line:#CFE6F5;
-    --card-border:#E3E8ED;
-    --white:#FFFFFF;
-    --hero-overlay:linear-gradient(180deg,rgba(255,255,255,0.55) 0%,rgba(238,244,251,0.72) 60%,#FFFFFF 100%);
-    --photo-ph:linear-gradient(135deg,#EEF4FB 0%,#DCE9F7 55%,#AECBF2 100%);
-    --col:540px;
-    --r:20px;
-    --r-sm:14px;
-    --shadow:0 18px 40px -22px rgba(16,40,70,0.30);
-    --shadow-soft:0 10px 28px -18px rgba(16,40,70,0.22);
-    --shadow-strong:0 26px 60px -26px rgba(11,127,184,0.42);
+    --bg:#ffffff;
+    --ink:#0d0f12;
+    --muted:#646c78;
+    --faint:#9aa3ad;
+    --line:#e9edf1;
+    --soft:#f4f7fa;
+    --soft2:#eef3f7;
+    --accent:#12a5e8;
+    --accent-deep:#0b7fb8;
+    --accent-wash:#e8f5fc;
+    --maxw:1000px;
+    --textw:600px;
+    --radius:22px;
+    --ease:cubic-bezier(.22,.7,.26,1);
   }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;overflow-x:hidden;scroll-behavior:smooth;}
   body{
-    font-family:"Golos Text","Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
-    color:var(--ink);
-    background:var(--bg);
-    line-height:1.55;
-    overflow-x:hidden;
-    -webkit-font-smoothing:antialiased;
+    font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+    font-size:17px;
   }
-  h1,h2,h3,.display{font-family:"Unbounded","Onest",system-ui,sans-serif;line-height:1.12;letter-spacing:-0.01em;overflow-wrap:break-word;word-break:break-word;hyphens:auto;}
+  img{display:block;max-width:100%;}
   a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
+  .display{font-family:"Unbounded",system-ui,sans-serif;letter-spacing:-.02em;line-height:1.08;font-weight:700;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+  section{padding:78px 0;}
+  .kicker{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-deep);}
+  .lead{color:var(--muted);font-size:18px;}
+  .center{text-align:center;}
 
-  /* ---------- layout shell with meridian line ---------- */
-  .page{position:relative;max-width:var(--col);margin:0 auto;padding:0 18px 120px;}
-  .page::before{
-    content:"";
-    position:absolute;
-    left:50%;top:0;bottom:0;
-    width:2px;
-    transform:translateX(-50%);
-    background:linear-gradient(180deg,
-      rgba(72,200,255,0) 0%,
-      rgba(72,200,255,0.45) 6%,
-      rgba(72,200,255,0.20) 50%,
-      rgba(72,200,255,0.45) 94%,
-      rgba(72,200,255,0) 100%);
-    z-index:0;
-    pointer-events:none;
-  }
-  section{position:relative;z-index:1;padding:54px 0;}
+  /* reveal */
+  .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
+  .rv.in{opacity:1;transform:none;}
 
-  /* ---------- reveal ---------- */
-  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
-  .reveal.in{opacity:1;transform:none;}
-  .stagger>*{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease;}
-  .stagger.in>*{opacity:1;transform:none;}
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    height:54px;padding:0 28px;border-radius:14px;font-weight:600;font-size:16px;
+    transition:transform .2s var(--ease),box-shadow .25s var(--ease),background .2s;cursor:pointer;border:none;}
+  .btn svg{width:19px;height:19px;}
+  .btn-primary{background:var(--ink);color:#fff;}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px -16px rgba(13,15,18,.5);}
+  .btn-primary:active{transform:scale(.98);}
+  .btn-accent{background:var(--accent);color:#fff;}
+  .btn-accent:hover{transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(18,165,232,.6);}
+  .btn-accent:active{transform:scale(.98);}
+  .btn-ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line);}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);}
 
-  /* ---------- buttons ---------- */
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:10px;
-    min-height:56px;padding:0 26px;width:100%;
-    font-family:"Golos Text",sans-serif;font-weight:600;font-size:17px;
-    border:none;border-radius:16px;cursor:pointer;text-align:center;
-    transition:transform .18s ease,box-shadow .25s ease,background .25s ease;
-    line-height:1.2;
-  }
-  .btn-primary{
-    background:var(--accent);color:#04222F;
-    box-shadow:0 14px 30px -14px rgba(11,127,184,0.55);
-  }
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 38px -14px rgba(11,127,184,0.62);}
-  .btn-primary:active{transform:scale(.98);background:var(--accent-ink);color:#fff;}
-  .btn-ghost{
-    background:var(--white);color:var(--ink);
-    border:1.5px solid var(--platina-deep);box-shadow:var(--shadow-soft);
-  }
-  .btn-ghost:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 18px 34px -18px rgba(11,127,184,0.40);}
-  .btn-ghost:active{transform:scale(.98);}
-  .btn .ic{width:22px;height:22px;flex:none;}
+  /* header */
+  header.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.82);
+    backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line);}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;padding-top:0;padding-bottom:0;}
+  .brand svg{height:40px;width:auto;}
+  .brand svg path{fill:var(--ink);}
+  .top a.book{font-weight:600;font-size:15px;color:var(--ink);border:1.5px solid var(--line);
+    padding:9px 18px;border-radius:11px;transition:border-color .2s,transform .2s;}
+  .top a.book:hover{border-color:var(--ink);}
 
-  .accent-word{position:relative;white-space:nowrap;}
-  .accent-word::after{
-    content:"";position:absolute;left:0;right:0;bottom:-2px;height:6px;border-radius:3px;
-    background:linear-gradient(90deg,var(--accent),var(--glow));
-    transform:scaleX(0);transform-origin:left;transition:transform .8s ease .25s;
-  }
-  .reveal.in .accent-word::after{transform:scaleX(1);}
-  .cyan{color:var(--accent-ink);}
+  /* hero */
+  .hero{padding-top:64px;padding-bottom:40px;text-align:center;}
+  .hero .kicker{display:block;margin-bottom:20px;}
+  .hero h1{font-size:clamp(30px,6vw,56px);max-width:14ch;margin:0 auto 20px;}
+  .hero h1 em{font-style:normal;color:var(--accent-deep);}
+  .hero .lead{max-width:34ch;margin:0 auto 30px;}
+  .hero-cta{display:flex;flex-direction:column;align-items:center;gap:14px;}
+  .hero-cta .price{font-size:14px;color:var(--muted);}
+  .hero-cta .price b{color:var(--ink);font-weight:600;}
+  .hero-img{margin:54px auto 0;max-width:560px;border-radius:var(--radius);overflow:hidden;
+    aspect-ratio:16/10;background:var(--soft2);box-shadow:0 40px 80px -50px rgba(13,40,70,.5);}
+  .hero-img img{width:100%;height:100%;object-fit:cover;}
 
-  /* ---------- hero ---------- */
-  .hero{padding-top:52px;text-align:center;}
-  .hero-media{
-    position:relative;border-radius:var(--r);overflow:hidden;
-    aspect-ratio:4/5;background:var(--photo-ph);box-shadow:var(--shadow);margin-bottom:26px;
-  }
-  .hero-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform 1.4s ease;}
-  .hero-media.in img{transform:scale(1);}
-  .hero-media::after{content:"";position:absolute;inset:0;background:var(--hero-overlay);}
-  .hero-badge{
-    position:absolute;z-index:2;top:16px;left:16px;
-    display:inline-flex;align-items:center;gap:8px;
-    background:rgba(255,255,255,0.82);backdrop-filter:blur(6px);
-    border:1px solid rgba(72,200,255,0.4);border-radius:999px;
-    padding:7px 14px;font-size:13px;font-weight:600;color:var(--graphite);
-  }
-  .hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(72,200,255,0.22);}
-  .hero h1{font-weight:800;font-size:clamp(25px,6.6vw,33px);color:var(--ink);margin-bottom:18px;max-width:100%;}
-  .hero .lead{color:var(--graphite);font-size:16px;line-height:1.6;margin-bottom:20px;max-width:420px;margin-left:auto;margin-right:auto;}
-  .price-inline{
-    display:inline-flex;align-items:baseline;gap:8px;
-    background:rgba(72,200,255,0.14);border:1px solid rgba(72,200,255,0.35);
-    border-radius:12px;padding:8px 16px;margin-bottom:22px;
-    font-family:"Unbounded",sans-serif;font-weight:700;font-size:18px;color:var(--ink);
-  }
-  .price-inline small{font-family:"Golos Text",sans-serif;font-weight:500;font-size:13px;color:var(--muted);}
-  .cta-note{display:block;margin-top:12px;font-size:13px;color:var(--muted);}
-  .microfacts{
-    display:flex;flex-wrap:wrap;justify-content:center;gap:6px 10px;
-    margin-top:24px;font-size:13px;color:var(--muted);
-  }
-  .microfacts span{display:inline-flex;align-items:center;gap:8px;}
-  .microfacts span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);}
+  /* value row */
+  .vals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:760px;margin:40px auto 0;}
+  .val{text-align:center;padding:8px;}
+  .val b{display:block;font-size:15px;font-weight:600;}
+  .val span{font-size:13.5px;color:var(--muted);}
 
-  /* ---------- logo block ---------- */
-  .logo-block{text-align:center;padding:72px 0;}
-  .lockup{display:inline-flex;flex-direction:column;align-items:center;gap:18px;}
-  .wordmark{font-family:"Unbounded",sans-serif;font-weight:800;font-size:clamp(28px,9vw,40px);color:var(--ink);text-transform:lowercase;letter-spacing:-0.02em;}
-  .mark{position:relative;width:84px;height:84px;}
-  .mark .glow{position:absolute;inset:-18px;border-radius:50%;background:radial-gradient(circle,rgba(174,203,242,0.65) 0%,rgba(174,203,242,0) 68%);}
-  .mark svg{position:relative;width:100%;height:100%;color:var(--graphite);}
-  .logo-block .descr{max-width:380px;margin:22px auto 0;color:var(--muted);font-size:15px;}
+  /* essence / occasions */
+  .essence h2{font-size:clamp(24px,4.4vw,38px);max-width:18ch;margin:0 auto 16px;}
+  .essence .lead{max-width:46ch;margin:0 auto;}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px;}
+  .gallery figure{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;background:var(--soft2);}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+  .gallery figure:hover img{transform:scale(1.05);}
+  .gallery figcaption{position:absolute;left:12px;bottom:11px;color:#fff;font-weight:600;font-size:14px;
+    text-shadow:0 2px 12px rgba(0,0,0,.55);}
+  .occ-line{margin-top:30px;text-align:center;color:var(--muted);font-size:15px;}
+  .occ-line b{color:var(--ink);font-weight:500;}
 
-  /* ---------- big photo ---------- */
-  .photo-figure{margin:0;}
-  .photo-figure h2{font-weight:700;font-size:clamp(24px,7vw,32px);margin-bottom:16px;text-align:center;}
-  .photo-frame{
-    position:relative;border-radius:var(--r);overflow:hidden;
-    height:60vh;min-height:360px;background:var(--photo-ph);box-shadow:var(--shadow);
-  }
-  .photo-frame img{width:100%;height:100%;object-fit:cover;}
-  .photo-cap{
-    position:absolute;left:0;right:0;bottom:0;
-    padding:18px 18px 16px;color:var(--graphite);font-size:14px;font-weight:500;
-    background:linear-gradient(180deg,rgba(247,247,249,0) 0%,rgba(231,235,238,0.92) 60%);
-    backdrop-filter:blur(2px);
-  }
+  /* packages */
+  .packages{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .packages h2{font-size:clamp(24px,4.4vw,38px);text-align:center;margin-bottom:10px;}
+  .packages .sub{text-align:center;color:var(--muted);max-width:42ch;margin:0 auto 44px;font-size:16px;}
+  .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch;}
+  .pkg{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 26px;display:flex;flex-direction:column;}
+  .pkg.feat{border-color:var(--accent);box-shadow:0 30px 60px -40px rgba(18,165,232,.6);position:relative;}
+  .pkg .tag{position:absolute;top:-12px;left:26px;background:var(--accent);color:#fff;font-size:12px;font-weight:600;
+    padding:5px 12px;border-radius:999px;letter-spacing:.02em;}
+  .pkg .pname{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:.02em;}
+  .pkg .pprice{font-family:"Unbounded",sans-serif;font-weight:600;font-size:30px;margin:10px 0 4px;letter-spacing:-.02em;}
+  .pkg .pprice small{font-family:"Golos Text",sans-serif;font-size:14px;font-weight:500;color:var(--faint);}
+  .pkg .pdesc{color:var(--muted);font-size:15px;margin:8px 0 22px;flex:1;}
+  .pkg .btn{height:48px;font-size:15px;}
+  .incl{margin-top:34px;text-align:center;color:var(--muted);font-size:15px;max-width:54ch;margin-left:auto;margin-right:auto;}
+  .incl b{color:var(--ink);font-weight:500;}
 
-  /* ---------- essence ---------- */
-  .essence{text-align:center;}
-  .spark{display:block;width:34px;height:34px;margin:0 auto 22px;color:var(--accent);}
-  .essence h2{font-weight:700;font-size:clamp(24px,7vw,32px);margin-bottom:18px;}
-  .essence p{max-width:460px;margin:0 auto 22px;font-size:18px;color:var(--graphite);line-height:1.65;}
+  /* about */
+  .about{text-align:center;}
+  .about h2{font-size:clamp(22px,4vw,34px);margin-bottom:18px;}
+  .about p{max-width:50ch;margin:0 auto 26px;color:var(--muted);}
+  .about p b{color:var(--ink);font-weight:500;}
+  .links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;font-size:15px;}
+  .links a{color:var(--muted);border-bottom:1px solid transparent;padding-bottom:2px;transition:color .2s,border-color .2s;}
+  .links a:hover{color:var(--ink);border-color:var(--ink);}
 
-  /* ---------- occasions ---------- */
-  .occasions h2{font-weight:700;font-size:clamp(23px,6.5vw,30px);text-align:center;margin-bottom:10px;}
-  .occasions .sub{text-align:center;color:var(--muted);font-size:15px;max-width:440px;margin:0 auto 26px;}
-  .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
-  .chip{
-    display:inline-flex;align-items:center;justify-content:center;
-    background:var(--white);border:1.5px solid var(--platina-deep);border-radius:999px;
-    padding:12px 18px;font-size:15px;font-weight:600;color:var(--graphite);
-    cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;
-    user-select:none;
-  }
-  .chip:hover,.chip:focus-visible{background:#EEF4FB;border-color:var(--accent);transform:translateY(-3px);box-shadow:0 12px 22px -14px rgba(11,127,184,0.4);outline:none;}
-  .chip:active{transform:translateY(-1px) scale(.98);}
-  .chip-photo{
-    display:block;
-    position:relative;flex:1 1 calc(50% - 6px);min-width:150px;height:120px;
-    border-radius:var(--r-sm);overflow:hidden;border:none;padding:0;background:var(--photo-ph);
-    cursor:pointer;transition:transform .2s ease,box-shadow .25s ease;
-  }
-  .chip-photo:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
-  .chip-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-  .chip-photo span{
-    position:absolute;left:0;right:0;bottom:0;padding:12px 14px;
-    color:#0A0B0D;font-weight:600;font-size:15px;
-    background:linear-gradient(180deg,rgba(238,244,251,0) 0%,rgba(238,244,251,0.9) 70%);
-  }
-  .chip-photo:hover{transform:translateY(-3px);box-shadow:0 14px 26px -14px rgba(11,127,184,0.45);}
-  .occasions .btn{margin-top:24px;}
+  /* final cta */
+  .final{background:var(--ink);color:#fff;border-radius:0;text-align:center;}
+  .final h2{font-size:clamp(24px,4.6vw,40px);margin-bottom:16px;color:#fff;}
+  .final p{max-width:40ch;margin:0 auto 30px;color:#aeb6c0;}
+  .final .row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;}
+  .final .btn-accent{background:var(--accent);}
+  .final .btn-dark{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.18);}
+  .final .btn-dark:hover{background:rgba(255,255,255,.14);transform:translateY(-2px);}
+  .final .mail{margin-top:22px;font-size:14px;color:#8b94a0;}
+  .final .mail a{color:#cfd6de;border-bottom:1px solid rgba(255,255,255,.25);}
 
-  /* ---------- packages ---------- */
-  .packages h2{font-weight:700;font-size:clamp(24px,7vw,32px);text-align:center;margin-bottom:10px;}
-  .packages .sub{text-align:center;color:var(--muted);font-size:15px;max-width:460px;margin:0 auto 30px;}
-  .pkg-grid{display:flex;flex-direction:column;gap:20px;}
-  .pkg{
-    position:relative;background:linear-gradient(180deg,var(--platina) 0%,var(--white) 42%);
-    border:1.5px solid var(--card-border);border-radius:var(--r);
-    padding:24px 22px;box-shadow:var(--shadow-soft);
-    transition:transform .25s ease,box-shadow .3s ease;
-  }
-  .pkg:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
-  .pkg-name{font-family:"Unbounded",sans-serif;font-weight:700;font-size:19px;margin-bottom:14px;}
-  .pkg-price{
-    display:inline-flex;align-items:baseline;gap:4px;
-    background:var(--white);border:1px solid var(--platina-deep);border-radius:12px;
-    padding:10px 16px;margin-bottom:14px;
-    font-family:"Unbounded",sans-serif;font-weight:800;font-size:26px;color:var(--ink);
-  }
-  .pkg-price small{font-family:"Golos Text",sans-serif;font-weight:500;font-size:13px;color:var(--muted);align-self:center;}
-  .pkg-price .rub{color:var(--accent-ink);}
-  .pkg-desc{font-size:15px;color:var(--graphite);margin-bottom:8px;}
-  .pkg-for{font-size:14px;color:var(--muted);margin-bottom:18px;}
-  .pkg-bridge{
-    font-size:13.5px;line-height:1.5;color:var(--graphite);
-    background:rgba(72,200,255,0.12);border-left:3px solid var(--accent);
-    border-radius:8px;padding:10px 12px;margin-bottom:18px;
-  }
-  .pkg-bridge b{color:var(--accent-ink);}
-  .pkg .btn{min-height:50px;font-size:16px;}
-  .pkg-featured{
-    background:linear-gradient(180deg,#EAF6FE 0%,var(--white) 46%);
-    border:2px solid var(--accent);
-    box-shadow:0 0 0 6px rgba(174,203,242,0.28),var(--shadow-strong);
-    transform:scale(1.015);
-    animation:pulseGlow 3.2s ease-in-out infinite;
-  }
-  .pkg-featured:hover{transform:translateY(-4px) scale(1.015);}
-  @keyframes pulseGlow{
-    0%,100%{box-shadow:0 0 0 6px rgba(174,203,242,0.22),var(--shadow-strong);}
-    50%{box-shadow:0 0 0 10px rgba(174,203,242,0.40),0 30px 64px -26px rgba(11,127,184,0.5);}
-  }
-  .pkg-badge{
-    position:absolute;top:-13px;left:50%;transform:translateX(-50%);
-    background:var(--accent);color:#04222F;border-radius:999px;
-    padding:6px 16px;font-size:13px;font-weight:600;white-space:nowrap;
-    box-shadow:0 8px 18px -8px rgba(11,127,184,0.6);
-  }
-  .pkg-notches{display:flex;justify-content:center;gap:34px;margin:6px 0 26px;}
-  .notch{display:flex;flex-direction:column;align-items:center;gap:8px;font-family:"Unbounded",sans-serif;font-weight:700;font-size:15px;color:var(--muted);}
-  .notch::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--white);border:3px solid var(--accent);box-shadow:0 0 0 4px rgba(72,200,255,0.16);}
-  .notch.lit{color:var(--accent-ink);}
-  .notch.lit::before{background:var(--accent);}
+  footer{padding:30px 0;text-align:center;color:var(--faint);font-size:13px;}
+  footer .brand-sm svg{height:26px;width:auto;margin:0 auto 12px;opacity:.85;}
+  footer .brand-sm svg path{fill:var(--ink);}
 
-  /* ---------- service ---------- */
-  .service{margin-top:8px;}
-  .service-card{background:var(--surface);border:1px solid var(--card-border);border-radius:var(--r);padding:28px 22px;box-shadow:var(--shadow-soft);}
-  .service-card h2{font-weight:700;font-size:clamp(21px,6vw,27px);margin-bottom:8px;}
-  .service-card .intro{font-size:15px;color:var(--graphite);margin-bottom:22px;}
-  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 16px;}
-  .svc-item{display:flex;gap:10px;align-items:flex-start;}
-  .svc-item .ic{flex:none;width:26px;height:26px;color:var(--accent);margin-top:1px;}
-  .svc-item b{display:block;font-size:15px;font-weight:600;color:var(--ink);}
-  .svc-item span{font-size:13.5px;color:var(--muted);}
-  .service-lock{margin-top:22px;font-size:15px;color:var(--graphite);font-weight:500;}
-  .service-lock b{color:var(--ink);}
+  /* sticky cta */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+    transform:translateY(120%);transition:transform .4s var(--ease);pointer-events:none;}
+  .sticky.show{transform:none;pointer-events:auto;}
+  .sticky a{width:100%;max-width:420px;box-shadow:0 -4px 30px -10px rgba(13,40,70,.3),0 14px 30px -14px rgba(18,165,232,.5);}
 
-  /* ---------- about / taplink ---------- */
-  .about h2{font-weight:700;font-size:clamp(24px,7vw,32px);text-align:center;margin-bottom:18px;}
-  .about p{font-size:16px;color:var(--graphite);margin-bottom:20px;}
-  .proof-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px;}
-  .proof-chips span{background:var(--white);border:1px solid var(--platina-deep);border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:500;color:var(--graphite);}
-  .links{display:flex;flex-direction:column;gap:12px;}
-  .link-btn{
-    display:flex;align-items:center;gap:14px;min-height:56px;
-    background:var(--white);border:1.5px solid var(--card-border);border-radius:16px;
-    padding:0 18px;box-shadow:var(--shadow-soft);
-    transition:transform .2s ease,border-color .2s ease,box-shadow .25s ease;
-  }
-  .link-btn .ic{flex:none;width:26px;height:26px;color:var(--accent-ink);}
-  .link-btn .txt{flex:1;font-weight:600;font-size:16px;color:var(--ink);}
-  .link-btn .arr{flex:none;width:20px;height:20px;color:var(--muted);transition:transform .2s ease;}
-  .link-btn:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 16px 30px -18px rgba(11,127,184,0.4);}
-  .link-btn:hover .arr{transform:translateX(4px);color:var(--accent-ink);}
-  .link-btn:active{transform:scale(.99);}
-
-  /* ---------- final cta ---------- */
-  .final{background:var(--bg-polar);border-radius:var(--r);padding:40px 22px 36px;text-align:center;box-shadow:var(--shadow-soft);overflow:hidden;position:relative;}
-  .final .spark4{display:block;width:46px;height:46px;margin:0 auto 18px;color:var(--accent);}
-  .final h2{font-weight:800;font-size:clamp(24px,7.5vw,34px);margin-bottom:16px;color:var(--ink);}
-  .final p{font-size:16px;color:var(--graphite);max-width:440px;margin:0 auto 26px;line-height:1.6;}
-  .final .cta-stack{display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto;}
-  .final .meta{margin-top:22px;font-size:13.5px;color:var(--muted);}
-  .final .meta a{color:var(--accent-ink);font-weight:500;}
-  .final .repeat{margin-top:6px;font-size:13px;color:var(--muted);}
-  .final-mark{width:54px;height:54px;margin:26px auto 0;color:var(--graphite);position:relative;}
-  .final-mark .glow{position:absolute;inset:-14px;border-radius:50%;background:radial-gradient(circle,rgba(174,203,242,0.6) 0%,rgba(174,203,242,0) 68%);}
-  .final-mark svg{position:relative;width:100%;height:100%;}
-
-  /* ---------- sticky order button ---------- */
-  .sticky-order{
-    position:fixed;left:0;right:0;bottom:0;z-index:50;
-    display:flex;justify-content:center;
-    padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));
-    background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 35%,#fff 100%);
-    transform:translateY(120%);opacity:0;
-    transition:transform .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease;
-    pointer-events:none;
-  }
-  .sticky-order.show{transform:none;opacity:1;pointer-events:auto;}
-  .sticky-order .btn{max-width:var(--col);box-shadow:0 -2px 24px -8px rgba(11,127,184,0.45),0 14px 30px -14px rgba(11,127,184,0.55);}
-
-  footer{text-align:center;padding:30px 0 12px;font-size:12px;color:var(--muted);}
-
-  @media (min-width:560px){
-    .page{padding-left:24px;padding-right:24px;}
+  @media (max-width:720px){
+    section{padding:58px 0;}
+    .vals{max-width:420px;}
+    .pkgs{grid-template-columns:1fr;}
+    .pkg.feat{order:-1;}
+    .gallery{gap:10px;}
+    .gallery figcaption{font-size:12.5px;left:10px;bottom:9px;}
+    .hero-img{margin-top:42px;}
   }
   @media (prefers-reduced-motion:reduce){
+    .rv{opacity:1;transform:none;transition:none;}
     html{scroll-behavior:auto;}
-    .reveal,.stagger>*{transition:none;opacity:1;transform:none;}
-    .hero-media img{transform:none !important;transition:none;}
-    .pkg-featured{animation:none;}
-    .accent-word::after{transition:none;}
   }
 </style>
 </head>
 <body>
 
-<div class="page">
-
-  <!-- 1. HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-media reveal">
-      <span class="hero-badge"><span class="dot"></span>Северный Звук · выездной диджей</span>
-      <img src="images/photo1.jpg" loading="eager" alt="Выезд Северного Звука на берегу залива — MC у микрофона и диджей за пультом">
-    </div>
-    <h1 class="reveal">Твою вечеринку<br>будут <span class="accent-word">вспоминать</span><br>до следующего лета</h1>
-    <p class="lead reveal">Выездной диджей со своим звуком и светом — приедем туда, где у тебя праздник. День рождения, свадьба, корпоратив, open-air.</p>
-    <span class="price-inline reveal">от 20 000 ₽ <small>без аренды чужого и сюрпризов по цене</small></span>
-    <a class="btn btn-primary reveal" href="https://t.me/plxn_51" target="_blank" rel="noopener">
-      <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
-      Заказать диджея
+<!-- HEADER -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Северный Звук">
+      <svg viewBox="0 0 566.22 362.88" role="img" aria-label="Северный Звук">
+        <path d="M0,362.03c20.55-46.23,57.32-83.51,98.46-112.14,129.14-89.3,309.9-71.08,418.75,41.98,15.01,15.42,28.95,32.08,39.61,50.84,3.48,6.28,6.72,12.66,9.4,19.32-6.98-8.06-13.65-16.28-20.58-24.34-9.03-10.39-18.54-21.27-28.35-30.9-139.78-136.63-362.71-124.39-489.96,22.84-9.01,9.96-18.89,21.96-27.33,32.4h0Z"/>
+        <path d="M292.11,202.22c-1.15,39.97-3.08,79.92-5.28,119.85-.73,13.32-1.68,26.63-3.72,39.95-3.9-26.56-4.24-53.2-5.81-79.9-1.27-26.63-2.44-53.26-3.19-79.9-.12-4.97,3.81-9.1,8.78-9.22,5.12-.14,9.36,4.1,9.22,9.22h0Z"/>
+        <path d="M140.66,361.69c12.26-37.96,28.69-74.94,52.74-107.04,19.2-26.25,40.45-47.31,73.7-53.89,10.35-1.95,21.05-1.98,31.01.55.5.13.8.63.67,1.13-.08.33-.34.58-.65.67-9.75,2.68-18.74,5.73-27.17,9.77-16.95,8.06-31.31,19.35-45.79,31.2-7.26,5.97-14.27,12.48-20.6,19.67-12.75,14.48-24.05,30.35-34.19,46.86-10.33,16.64-19.5,34.1-28.04,51.75-.21.46-.76.65-1.22.43-.41-.2-.6-.67-.46-1.09h0Z"/>
+        <path d="M431.02,362.36c-16.91-34.95-36.38-69.21-61.99-98.5-6.3-7.19-13.28-13.7-20.51-19.68-14.42-11.85-28.71-23.18-45.61-31.26-8.4-4.06-17.35-7.11-27.08-9.79-.5-.13-.81-.65-.67-1.15.09-.33.35-.57.67-.65,5-1.25,10.17-1.93,15.34-1.95,15.8-.21,31.39,4.82,45.09,12.5,18.28,10.17,31.73,26.55,43.95,42.9,12.06,16.12,22.15,33.51,30.76,51.6,8.53,17.95,15.69,36.41,21.71,55.31.16.47-.1.98-.57,1.14-.44.15-.91-.07-1.1-.48h0Z"/>
+        <path d="M283.11,302.54c-85.15,0-171.34-19.68-171.34-57.29h18c0,6.62,12.71,17.07,41.11,25.52,29.85,8.88,69.71,13.77,112.23,13.77s82.37-4.89,112.23-13.77c28.4-8.45,41.11-18.91,41.11-25.52h18c0,37.61-86.2,57.29-171.34,57.29Z"/>
+        <path d="M226.02,142.8c1.34,7.51.68,13.03-1.97,16.55-2.65,3.53-7.76,5.96-15.34,7.32-13.43,2.39-21.24-2.54-23.42-14.82-.26-1.44-.54-3.85-.84-7.22l13.75-2.45.71,4.01c.59,3.32,1.2,5.45,1.81,6.38,1.1,1.59,3.02,2.14,5.77,1.65,3.97-.71,5.58-3.16,4.84-7.34l-.96-5.42c-.59-3.32-2.11-5.14-4.55-5.45-.92-.13-3.58.19-7.98.98l-2.1-11.8c4.19-.75,6.72-1.38,7.59-1.91,1.88-1.15,2.52-3.43,1.91-6.82-.41-2.31-1.03-3.88-1.84-4.7-.82-.82-2.35-1.04-4.58-.64-2.74.49-4.26,1.62-4.54,3.38-.16.77.06,2.86.67,6.25l-13.21,2.36c-.68-2.11-1.07-3.5-1.19-4.15-1.12-6.28-.25-11.02,2.61-14.21,2.53-2.91,7.01-4.94,13.44-6.08,6.86-1.22,11.94-.94,15.24.86,3.78,2.01,6.27,6.33,7.45,12.97.98,5.49-.63,10.24-4.83,14.27,6.19,2.1,10.04,7.45,11.57,16.04Z"/>
+        <path d="M278.05,139.08c.44,7.1-.81,12.23-3.73,15.38-2.93,3.16-7.98,4.96-15.15,5.4l-21.63,1.33-4.14-67.19,20.97-1.29c7.17-.44,12.1.21,14.78,1.95,3.22,2.15,5.04,6.67,5.46,13.55.36,5.78-1.64,10.31-6,13.59,3.36,2.07,5.75,4.5,7.17,7.27,1.25,2.42,2.01,5.75,2.27,10ZM260.19,110.43c-.23-3.81-2.15-5.6-5.73-5.38l-5.82.36.79,12.74,3.18-.2c5.34-.33,7.87-2.84,7.58-7.52ZM262.83,138.92c-.42-6.88-3.09-10.17-7.99-9.87l-4.72.29,1.13,18.33,3.73-.23c3.22-.2,5.38-.86,6.49-2,1.11-1.13,1.56-3.31,1.36-6.53Z"/>
+        <path d="M329.53,118.01c-.57,10.54-2.24,19.78-5.02,27.71-3.04,8.65-7.7,16.73-13.98,24.25l-26.14-1.41.53-9.89,11.64.63c-7.13-12.13-10.24-26.66-9.33-43.58l1.31-24.27,15.16.82c-.99,18.38-1.46,29.15-1.4,32.31.06,9.99,1.4,20.42,4.04,31.28,3.71-10.45,6.12-20.67,7.26-30.67.39-3.14,1.09-13.89,2.08-32.28l15.16.82-1.31,24.27Z"/>
+        <path d="M388.54,105.2c-1.76,10.04-7.04,18.12-15.86,24.25,3.85,5.66,6,12.1,6.45,19.33.31,5.04-.29,11.86-1.79,20.46l-14.95-2.62c1.21-6.93,1.88-12.25,2-15.95.12-6.23-.85-11.46-2.89-15.69-1.87.79-3.87,1.48-6,2.08l-4.82,27.52-14.95-2.62,11.6-66.31,14.95,2.62-4.93,28.17c8.84-4.56,14.38-13.27,16.63-26.12l14.95,2.62c-.04.22-.11.62-.21,1.19-.08.43-.14.8-.19,1.08Z"/>
+        <path d="M112.75,70.27c2.45,7.69,2.66,13.51.65,17.46-2.01,3.95-6.83,7.14-14.45,9.56-7.69,2.45-13.49,2.64-17.42.58-3.93-2.06-7.11-6.93-9.56-14.62l-7.91-24.84c-2.42-7.62-2.62-13.42-.58-17.42,2.04-4,6.86-7.21,14.48-9.63,9.29-2.96,15.98-2.51,20.05,1.35,2.66,2.54,5.61,8.91,8.86,19.11l-14.78,4.71-2.72-8.54c-.73-2.29-1.55-3.79-2.47-4.49-1.17-1-2.9-1.14-5.21-.41-2.3.73-3.69,1.83-4.15,3.28-.34,1.1-.13,2.84.62,5.2l9.26,29.1c.75,2.37,1.59,3.9,2.5,4.6,1.14.94,2.9,1.03,5.28.27,2.31-.73,3.69-1.82,4.15-3.27.27-1.08.03-2.8-.72-5.16l-2.72-8.54,14.78-4.71,2.04,6.39Z"/>
+        <path d="M163.02,58.39c1.8,7.86,1.53,13.68-.8,17.45-2.34,3.77-7.4,6.55-15.19,8.33-7.86,1.8-13.67,1.51-17.41-.87-3.74-2.38-6.51-7.5-8.31-15.36l-5.82-25.41c-1.78-7.79-1.49-13.59.87-17.41,2.36-3.81,7.44-6.61,15.23-8.4,7.79-1.78,13.56-1.49,17.3.89,3.74,2.38,6.51,7.5,8.31,15.36l3.39,14.8-26.91,6.16,2.93,12.8c.55,2.42,1.33,4.07,2.34,4.96,1.01.89,2.79,1.05,5.33.46,2.4-.55,3.9-1.53,4.5-2.93.52-1.09.5-2.84-.05-5.25l-1.41-6.17,14.8-3.39.91,3.97ZM143.14,39.58l-1.14-5c-.57-2.48-1.29-4.14-2.17-4.98-1.18-1.15-3.01-1.44-5.48-.87-2.55.58-4.11,1.65-4.67,3.19-.44,1.07-.37,2.88.21,5.43l1.14,5,12.12-2.77Z"/>
+        <path d="M215.08,51.54c1.01,7.04.19,12.25-2.47,15.64-2.66,3.38-7.55,5.59-14.66,6.61l-21.45,3.09-9.59-66.63,20.8-2.99c7.11-1.02,12.07-.77,14.89.75,3.38,1.89,5.56,6.24,6.54,13.06.83,5.74-.8,10.41-4.87,14.04,3.52,1.79,6.1,4.01,7.74,6.67,1.45,2.31,2.47,5.57,3.07,9.78ZM194.95,24.43c-.54-3.77-2.59-5.41-6.15-4.89l-5.77.83,1.82,12.63,3.16-.45c5.3-.76,7.61-3.47,6.95-8.11ZM199.89,52.62c-.98-6.82-3.9-9.88-8.77-9.19l-4.68.67,2.62,18.18,3.7-.53c3.19-.46,5.29-1.3,6.3-2.52,1.01-1.22,1.29-3.42.83-6.62Z"/>
+        <path d="M265.37,47.2c.49,8.05-.72,13.75-3.63,17.08-2.92,3.34-8.37,5.25-16.34,5.74-8.05.49-13.73-.74-17.03-3.69-3.31-2.96-5.2-8.46-5.7-16.51l-1.6-26.02c-.49-7.98.74-13.66,3.7-17.03,2.95-3.38,8.42-5.31,16.39-5.8,7.98-.49,13.62.75,16.92,3.7,3.3,2.96,5.2,8.46,5.7,16.51l.93,15.15-27.56,1.69.8,13.1c.15,2.48.65,4.24,1.5,5.28.85,1.04,2.58,1.49,5.19,1.33,2.46-.15,4.1-.87,4.91-2.16.69-.99.96-2.72.8-5.19l-.39-6.32,15.15-.93.25,4.06ZM248.82,25.4l-.31-5.12c-.16-2.54-.6-4.3-1.33-5.27-.98-1.32-2.74-1.91-5.27-1.75-2.61.16-4.32.96-5.13,2.39-.61.99-.84,2.78-.68,5.4l.31,5.12,12.41-.76Z"/>
+        <path d="M318.55,46.7c-.16,7.85-.87,13.11-2.1,15.8-2.09,4.58-6.48,6.8-13.18,6.66-2.72-.06-5.1-.77-7.13-2.13-1.38-.98-3.15-2.74-5.3-5.28l-.34,16.06-15.18-.32,1.62-77.2,14.19.3-.14,6.49c2.84-2.58,5.04-4.33,6.6-5.25,2.38-1.27,5.1-1.87,8.18-1.81,5.65.12,9.45,2.4,11.41,6.84,1.4,3.04,2.04,7.74,1.9,14.12l-.54,25.73ZM302.86,49.82l.64-30.53c.05-2.41-.25-4.09-.89-5.06-.79-1.33-2.4-2.02-4.84-2.07-2.44-.05-4.04.44-4.81,1.49-.76,1.04-1.17,2.84-1.22,5.39l-.64,30.53c-.05,2.55.24,4.31.89,5.27.79,1.19,2.41,1.8,4.85,1.85,2.44.05,4.12-.53,5.03-1.76.61-.94.95-2.64,1-5.12Z"/>
+        <path d="M369.29,73.56l-15.1-1.6,3.24-30.52-12.14-1.29-3.24,30.52-15.1-1.6,7.11-66.94,15.09,1.6-2.51,23.63,12.14,1.29,2.51-23.63,15.1,1.6-7.11,66.94Z"/>
+        <path d="M422.99,61.83c-1.66,7.89-3.98,13.03-6.95,15.4-3.35,2.74-8.87,3.3-16.54,1.69l-21.1-4.45,13.88-65.87,14.53,3.06-5.06,24c2.99.03,5.35.23,7.07.59,6.96,1.47,11.5,4.45,13.63,8.94,1.87,3.92,2.05,9.46.54,16.64ZM408.99,58.94c.66-3.14.8-5.42.43-6.84-.51-2.19-2.13-3.58-4.86-4.15-1.79-.38-3.55-.56-5.28-.55l-3.77,17.87,3.12.66c3.16.67,5.5.47,7.04-.58,1.53-1.05,2.64-3.19,3.31-6.4ZM439.86,87.42l-14.53-3.06,13.88-65.87,14.53,3.06-13.88,65.87Z"/>
+        <path d="M488.3,102.93l-14.47-4.6,6.43-20.23c-6.52,7.93-13.07,13.27-19.64,16.03l-13.21-4.2,20.4-64.16,14.46,4.6-14.2,44.66c7.41-2.72,14.02-10.47,19.86-23.24,1.62-3.64,3.72-9.51,6.29-17.62l14.47,4.6-20.4,64.15ZM507.02,20.82c-3.82,6.94-9.58,9.19-17.27,6.75-7.69-2.45-11.09-7.6-10.2-15.48l7.38.38c-.69,3.63.2,6.14,2.68,7.55.65.36,1.4.68,2.24.94,2.72.87,4.75.72,6.08-.43,1.33-1.15,2.27-2.37,2.84-3.66l6.25,3.95Z"/>
+      </svg>
     </a>
-    <small class="cta-note reveal">Ответим в Telegram за пару минут</small>
-    <div class="microfacts reveal">
-      <span>своя аппаратура</span>
-      <span>свет + звук</span>
-      <span>выезд по области</span>
-    </div>
-  </section>
+    <a class="book" href="https://t.me/plxn_51" target="_blank" rel="noopener">Заказать</a>
+  </div>
+</header>
 
-  <!-- 2. LOGO -->
-  <section class="logo-block reveal" id="logo">
-    <div class="lockup">
-      <span class="wordmark">северный звук</span>
-      <span class="mark">
-        <span class="glow"></span>
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
-          <ellipse cx="50" cy="50" rx="26" ry="26"/>
-          <ellipse cx="50" cy="50" rx="11" ry="26"/>
-          <line x1="50" y1="20" x2="50" y2="80"/>
-          <path d="M22 30 L8 22"/>
-          <path d="M78 30 L92 22"/>
-          <path d="M50 44 q6 6 0 12 q-6 -6 0 -12 z" fill="#48C8FF" stroke="#48C8FF"/>
-        </svg>
-      </span>
-    </div>
-    <p class="descr">Продакшн полного цикла Заполярья. Музыка, которая едет к вам — звук, свет и диджеи под ваше событие. Мурманск и область.</p>
-  </section>
-
-  <!-- 3. PHOTO -->
-  <section id="photo">
-    <figure class="photo-figure reveal">
-      <h2>Так это выглядит вживую</h2>
-      <div class="photo-frame">
-        <img src="images/photo5.jpg" loading="lazy" alt="Пляж с мостом под полярным небом — реальный выезд Северного Звука на природу">
-        <figcaption class="photo-cap">Сопки, вода, закат, который тут не заканчивается, — и звук, который слышно правильно. Наш свет, наша аппаратура, наши люди на танцполе.</figcaption>
-      </div>
-    </figure>
-  </section>
-
-  <!-- 4. ESSENCE -->
-  <section class="essence reveal" id="essence">
-    <svg class="spark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l1.8 7.5L21 10l-7.2 1.5L12 19l-1.8-7.5L3 10l7.2-1.5z"/></svg>
-    <h2>Любой повод — повод позвать диджея</h2>
-    <p>Можно собрать гостей, накрыть стол и разойтись в полночь. А можно — чтобы потом весь год пересматривали кружочки и спрашивали: «как вы это устроили?» Привезём <span class="accent-word">диджея с аппаратурой</span> туда, где у тебя праздник: квартира, дача, турбаза, сопка над морем.</p>
-    <p>Ты выбираешь дату и пакет — мы привозим музыку, свет и человека за пультом, который чувствует зал. Всё остальное берём на себя.</p>
-    <a class="btn btn-ghost" href="#packages">Выбрать пакет</a>
-  </section>
-
-  <!-- 5. OCCASIONS -->
-  <section class="occasions" id="occasions">
-    <h2 class="reveal">Под какой праздник нужна музыка?</h2>
-    <p class="sub reveal">Нажми на свой повод — напишешь нам уже с готовым запросом. Под каждый формат собираем команду, плейлист и сетап отдельно: одинаковых вечеринок у нас не бывает.</p>
-    <div class="chips stagger reveal">
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20день%20рождения" target="_blank" rel="noopener">День рождения</a>
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20свадьбу" target="_blank" rel="noopener">Свадьба</a>
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20корпоратив" target="_blank" rel="noopener">Корпоратив</a>
-      <a class="chip-photo" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20open-air" target="_blank" rel="noopener" aria-label="Повод: open-air на сопках">
-        <img src="images/photo2.jpg" loading="lazy" alt="Таёжная река — open-air на природе">
-        <span>Open-air на сопках</span>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker rv">Выездной диджей · Мурманск и область</span>
+    <h1 class="display rv">Вечеринку будут <em>вспоминать</em></h1>
+    <p class="lead rv">Привозим диджея, звук и свет на любой ваш праздник — от дачи до сопок над морем.</p>
+    <div class="hero-cta rv">
+      <a class="btn btn-accent" href="https://t.me/plxn_51" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
+        Заказать диджея
       </a>
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20юбилей" target="_blank" rel="noopener">Юбилей</a>
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20выпускной" target="_blank" rel="noopener">Выпускной</a>
-      <a class="chip-photo" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20праздник%20на%20турбазе" target="_blank" rel="noopener" aria-label="Повод: на турбазе">
-        <img src="images/photo3.jpg" loading="lazy" alt="Карьер — праздник на турбазе">
-        <span>Турбаза</span>
-      </a>
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20девичник" target="_blank" rel="noopener">Девичник</a>
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20годовщину" target="_blank" rel="noopener">Годовщина</a>
-      <a class="chip-photo" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20праздник%20на%20даче" target="_blank" rel="noopener" aria-label="Повод: на даче">
-        <img src="images/photo4.jpg" loading="lazy" alt="Лес и домик — праздник на даче">
-        <span>Дача</span>
-      </a>
-      <a class="chip" href="https://t.me/plxn_51?text=Здравствуйте!%20Интересует%20диджей%20на%20открытие%20заведения" target="_blank" rel="noopener">Открытие заведения</a>
+      <span class="price">от <b>20 000 ₽</b> · ответим в Telegram за пару минут</span>
     </div>
-    <p class="sub reveal" style="margin-top:22px;">Не нашёл свой повод? Напиши — придумаем формат под тебя.</p>
-    <a class="btn btn-primary reveal" href="https://t.me/plxn_51" target="_blank" rel="noopener">Подобрать под мой повод</a>
-  </section>
-
-  <!-- 6. PACKAGES -->
-  <section class="packages" id="packages">
-    <h2 class="reveal">Выбери, насколько громко</h2>
-    <p class="sub reveal">Любой формат — это полноценная вечеринка, разница только в масштабе техники. Цена стартовая: точную смету считаем под твою локацию и число гостей.</p>
-
-    <div class="pkg-notches reveal">
-      <span class="notch lit">20</span>
-      <span class="notch">60</span>
-      <span class="notch lit">100</span>
+    <div class="hero-img rv">
+      <img src="images/photo1.jpg" alt="Выезд Северного Звука на берегу залива — диджей и MC за пультом" loading="eager">
     </div>
+    <div class="vals rv">
+      <div class="val"><b>Своя аппаратура</b><span>звук и свет, не аренда</span></div>
+      <div class="val"><b>Диджеи-резиденты</b><span>MC PLXN · RADIO RECORD</span></div>
+      <div class="val"><b>Выезд по области</b><span>город, дача, природа</span></div>
+    </div>
+  </div>
+</section>
 
-    <div class="pkg-grid">
-      <article class="pkg reveal">
-        <h3 class="pkg-name">Диджей</h3>
-        <div class="pkg-price">от 20 000 <span class="rub">₽</span></div>
-        <p class="pkg-desc">Диджей на твоё событие со своим контроллером и плейлистом, собранным под тебя.</p>
-        <p class="pkg-for">Для камерных праздников и площадок, где звук уже есть.</p>
+<!-- ESSENCE + OCCASIONS -->
+<section class="essence">
+  <div class="wrap center">
+    <h2 class="display rv">Любой повод — повод позвать диджея</h2>
+    <p class="lead rv">День рождения, свадьба или просто вечер с друзьями на природе. Вы выбираете дату и пакет — мы привозим музыку, свет и человека за пультом, который чувствует зал.</p>
+    <div class="gallery rv">
+      <figure><img src="images/photo4.jpg" alt="Праздник на турбазе" loading="lazy"><figcaption>На турбазе</figcaption></figure>
+      <figure><img src="images/photo2.jpg" alt="Open-air на природе" loading="lazy"><figcaption>На природе</figcaption></figure>
+      <figure><img src="images/photo3.jpg" alt="Open-air на воде" loading="lazy"><figcaption>На сопках</figcaption></figure>
+    </div>
+    <p class="occ-line rv"><b>ДР · свадьба · корпоратив · юбилей · выпускной · девичник · open-air</b></p>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages">
+  <div class="wrap">
+    <h2 class="display rv">Пакеты</h2>
+    <p class="sub rv">Цена стартовая — точную смету считаем под вашу локацию и число гостей.</p>
+    <div class="pkgs">
+      <article class="pkg rv">
+        <span class="pname">Диджей</span>
+        <div class="pprice">20 000 <small>₽</small></div>
+        <p class="pdesc">Диджей с пультом и плейлистом, собранным под вас. Для камерных праздников и площадок со своим звуком.</p>
         <a class="btn btn-ghost" href="https://t.me/plxn_51" target="_blank" rel="noopener">Узнать цену</a>
       </article>
-
-      <article class="pkg reveal">
-        <h3 class="pkg-name">Диджей + аппаратура</h3>
-        <div class="pkg-price">от 60 000 <span class="rub">₽</span></div>
-        <p class="pkg-desc">Диджей плюс минимальный комплект звука: колонки и микрофон.</p>
-        <p class="pkg-for">Под день рождения, небольшой банкет, дачу, турбазу.</p>
+      <article class="pkg feat rv">
+        <span class="tag">берут чаще всего</span>
+        <span class="pname">Под ключ · звук + свет</span>
+        <div class="pprice">100 000 <small>₽</small></div>
+        <p class="pdesc">Диджей и полный сетап: звук и свет. Та самая атмосфера, как на наших open-air. Под свадьбы и большие праздники.</p>
+        <a class="btn btn-accent" href="https://t.me/plxn_51" target="_blank" rel="noopener">Забронировать дату</a>
+      </article>
+      <article class="pkg rv">
+        <span class="pname">Диджей + звук</span>
+        <div class="pprice">60 000 <small>₽</small></div>
+        <p class="pdesc">Диджей и аппаратура: колонки и микрофон. Под день рождения, небольшой банкет, дачу или турбазу.</p>
         <a class="btn btn-ghost" href="https://t.me/plxn_51" target="_blank" rel="noopener">Рассчитать смету</a>
       </article>
-
-      <article class="pkg pkg-featured reveal">
-        <span class="pkg-badge">Рекомендуем · берут чаще всего</span>
-        <h3 class="pkg-name">Вечеринка под ключ</h3>
-        <div class="pkg-price">от 100 000 <span class="rub">₽</span></div>
-        <p class="pkg-desc">Диджей плюс полноценный сетап: <b>ЗВУК + СВЕТ</b>. Та самая атмосфера, как на наших open-air.</p>
-        <p class="pkg-for">Под свадьбы, корпоративы и большие праздники, которые должны звучать на весь посёлок.</p>
-        <p class="pkg-bridge">Свет добавляет <b>+40к</b>, но именно он превращает банкет в вечеринку — это то, что гости снимают на видео. Окупается на первой же фотозоне.</p>
-        <a class="btn btn-primary" href="https://t.me/plxn_51" target="_blank" rel="noopener">Забронировать дату</a>
-      </article>
     </div>
-  </section>
+    <p class="incl rv">В любой пакет входит: <b>своя команда</b>, плейлист под вашу аудиторию и выезд на локацию заранее. Никакого «диджея с флешкой».</p>
+  </div>
+</section>
 
-  <!-- 7. SERVICE -->
-  <section class="service" id="service">
-    <div class="service-card reveal">
-      <h2>Дёшево — не значит на отвяжись</h2>
-      <p class="intro">Даже на самом простом пакете ты получаешь полный сервис, а не «парня с флешкой».</p>
-      <div class="svc-grid">
-        <div class="svc-item">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          <div><b>Команда под формат</b><span>Подбираем людей под характер твоего праздника.</span></div>
-        </div>
-        <div class="svc-item">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          <div><b>Плейлист под аудиторию</b><span>Чтобы танцевали и бабушки, и друзья.</span></div>
-        </div>
-        <div class="svc-item">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          <div><b>Сценарий вечера</b><span>Заранее обсуждаем тематику и ход праздника.</span></div>
-        </div>
-        <div class="svc-item">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          <div><b>Выезд на локацию</b><span>Приезжаем до события, чтобы на празднике всё просто работало.</span></div>
-        </div>
-      </div>
-      <p class="service-lock">Стартовая цена — это про объём техники, а не про отношение. Хоть за 20 000, хоть за 100 000 — это <b>продуманная вечеринка, а не диджей с флешкой</b>.</p>
-    </div>
-  </section>
-
-  <!-- 8. ABOUT / TAPLINK -->
-  <section class="about" id="about">
-    <h2 class="reveal">Кто за пультом</h2>
-    <p class="reveal">«Северный Звук» — продакшн полного цикла Заполярья. Больше года в эфире, своя аппаратура (профессиональный звук и свет — собственный парк, не аренда), диджеи-резиденты сцены. MC PLXN звучит на RADIO RECORD 102 FM. За плечами — open-air на сопках и большие городские события: только на Морвокзале мы провели 22 события почти на 29 000 гостей с 40+ партнёрами. Вокруг бренда живёт комьюнити северной сцены — заходи, тут свои. Все наши ссылки — ниже.</p>
-    <div class="proof-chips reveal">
-      <span>1+ год в эфире</span>
-      <span>своя аппаратура</span>
-      <span>RADIO RECORD 102 FM</span>
-      <span>29 000 гостей</span>
-    </div>
-    <nav class="links reveal" aria-label="Активы Северного Звука">
-      <a class="link-btn" href="https://plaxinwork51-debug.github.io/sever-zvuk-map/" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3z"/><path d="M9 3v15M15 6v15"/></svg>
-        <span class="txt">Карта заведений Мурманска</span>
-        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link-btn" href="https://t.me/sever_zvyk" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
-        <span class="txt">Telegram-канал</span>
-        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link-btn" href="https://vk.ru/severzvyk" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12.8 16.5c-5.3 0-8.6-3.7-8.7-9.8h2.7c.1 4.5 2.1 6.4 3.6 6.8V6.7h2.5v3.8c1.5-.2 3-1.8 3.6-3.8h2.5c-.4 2.4-2 4-3.1 4.7 1.1.6 3 2 3.7 4.6h-2.8c-.5-1.7-1.9-3-3.4-3.2v3.2h-.5z"/></svg>
-        <span class="txt">ВКонтакте</span>
-        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link-btn" href="https://dzen.ru/severzvyk" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.3 5 1.2 7.8 3.1 9.6C16.9 13.4 19.7 13.6 22 12c-5 .3-7.8 1.2-9.6 3.1C10.6 16.9 10.3 19.7 12 22c-.3-5-1.2-7.8-3.1-9.6C7.1 10.6 4.3 10.4 2 12c5-.3 7.8-1.2 9.6-3.1C13.4 7.1 13.7 4.3 12 2z"/></svg>
-        <span class="txt">Дзен</span>
-        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link-btn" href="https://taplink.cc/severzvyk" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg>
-        <span class="txt">Все ссылки (Taplink)</span>
-        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
-      <a class="link-btn" href="https://instagram.com/plxn_51" target="_blank" rel="noopener">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
-        <span class="txt">Instagram MC PLXN</span>
-        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-      </a>
+<!-- ABOUT -->
+<section class="about">
+  <div class="wrap">
+    <h2 class="display rv">Кто за пультом</h2>
+    <p class="rv"><b>«Северный Звук»</b> — продакшн полного цикла из Мурманска. Своя аппаратура, диджеи-резиденты, MC PLXN на RADIO RECORD 102 FM. От камерного ДР до open-air на сопках.</p>
+    <nav class="links rv" aria-label="Северный Звук в сети">
+      <a href="https://plaxinwork51-debug.github.io/sever-zvuk-map/" target="_blank" rel="noopener">Карта заведений</a>
+      <a href="https://t.me/sever_zvyk" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://vk.ru/severzvyk" target="_blank" rel="noopener">ВКонтакте</a>
+      <a href="https://dzen.ru/severzvyk" target="_blank" rel="noopener">Дзен</a>
+      <a href="https://instagram.com/plxn_51" target="_blank" rel="noopener">Instagram</a>
     </nav>
-  </section>
+  </div>
+</section>
 
-  <!-- 9. FINAL CTA -->
-  <section id="cta">
-    <div class="final reveal">
-      <svg class="spark4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2 8.5c.2.9.9 1.6 1.8 1.8L24 12l-8.2 1.7c-.9.2-1.6.9-1.8 1.8L12 24l-2-8.5c-.2-.9-.9-1.6-1.8-1.8L0 12l8.2-1.7c.9-.2 1.6-.9 1.8-1.8L12 0z"/></svg>
-      <h2>Давай сделаем легенду из твоего вечера</h2>
-      <p>Напиши дату, повод и примерное число гостей — за пару минут подберём пакет и пришлём точную смету. От 20 000 ₽ за диджея, от 100 000 ₽ за вечеринку под ключ со звуком и светом. Просчёт сметы бесплатный и ни к чему не обязывает — без «ну как-нибудь сыграем» и без воды. Будет громко, тепло и по-северному правильно. Telegram — самый быстрый канал.</p>
-      <div class="cta-stack">
-        <a class="btn btn-primary" href="https://t.me/plxn_51" target="_blank" rel="noopener">
-          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
-          Написать в Telegram
-        </a>
-        <a class="btn btn-ghost" href="tel:+79117549702">
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/></svg>
-          Позвонить +7 911 754-97-02
-        </a>
-        <a class="btn btn-ghost" href="https://wa.me/79117549702" target="_blank" rel="noopener">
-          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-.7-.3-1.4-.6-2.1-1.5-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.3.1-.5l.4-.4c.1-.1.2-.3.2-.4 0-.2 0-.3-.1-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
-          Написать в WhatsApp
-        </a>
-      </div>
-      <p class="meta">Почта: <a href="mailto:plaksin_work@mail.ru">plaksin_work@mail.ru</a></p>
-      <p class="repeat">выездной диджей с аппаратурой · Мурманск и область</p>
-      <span class="final-mark">
-        <span class="glow"></span>
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
-          <ellipse cx="50" cy="50" rx="26" ry="26"/>
-          <ellipse cx="50" cy="50" rx="11" ry="26"/>
-          <line x1="50" y1="20" x2="50" y2="80"/>
-          <path d="M22 30 L8 22"/>
-          <path d="M78 30 L92 22"/>
-          <path d="M50 44 q6 6 0 12 q-6 -6 0 -12 z" fill="#48C8FF" stroke="#48C8FF"/>
-        </svg>
-      </span>
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2 class="display rv">Обсудим ваш праздник?</h2>
+    <p class="rv">Напишите дату и повод — за пару минут подберём пакет и пришлём смету. Бесплатно и ни к чему не обязывает.</p>
+    <div class="row rv">
+      <a class="btn btn-accent" href="https://t.me/plxn_51" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
+        Написать в Telegram
+      </a>
+      <a class="btn btn-dark" href="tel:+79117549702">Позвонить +7 911 754-97-02</a>
     </div>
-  </section>
+    <p class="mail rv">WhatsApp: <a href="https://wa.me/79117549702" target="_blank" rel="noopener">+7 911 754-97-02</a> · Почта: <a href="mailto:plaksin_work@mail.ru">plaksin_work@mail.ru</a></p>
+  </div>
+</section>
 
-  <footer>© Северный Звук · Мурманск и область · продакшн полного цикла Заполярья</footer>
-</div>
+<footer>
+  <div class="wrap brand-sm">
+    <svg viewBox="0 0 566.22 362.88" aria-hidden="true">
+      <path d="M0,362.03c20.55-46.23,57.32-83.51,98.46-112.14,129.14-89.3,309.9-71.08,418.75,41.98,15.01,15.42,28.95,32.08,39.61,50.84,3.48,6.28,6.72,12.66,9.4,19.32-6.98-8.06-13.65-16.28-20.58-24.34-9.03-10.39-18.54-21.27-28.35-30.9-139.78-136.63-362.71-124.39-489.96,22.84-9.01,9.96-18.89,21.96-27.33,32.4h0Z"/>
+      <path d="M292.11,202.22c-1.15,39.97-3.08,79.92-5.28,119.85-.73,13.32-1.68,26.63-3.72,39.95-3.9-26.56-4.24-53.2-5.81-79.9-1.27-26.63-2.44-53.26-3.19-79.9-.12-4.97,3.81-9.1,8.78-9.22,5.12-.14,9.36,4.1,9.22,9.22h0Z"/>
+      <path d="M140.66,361.69c12.26-37.96,28.69-74.94,52.74-107.04,19.2-26.25,40.45-47.31,73.7-53.89,10.35-1.95,21.05-1.98,31.01.55.5.13.8.63.67,1.13-.08.33-.34.58-.65.67-9.75,2.68-18.74,5.73-27.17,9.77-16.95,8.06-31.31,19.35-45.79,31.2-7.26,5.97-14.27,12.48-20.6,19.67-12.75,14.48-24.05,30.35-34.19,46.86-10.33,16.64-19.5,34.1-28.04,51.75-.21.46-.76.65-1.22.43-.41-.2-.6-.67-.46-1.09h0Z"/>
+      <path d="M431.02,362.36c-16.91-34.95-36.38-69.21-61.99-98.5-6.3-7.19-13.28-13.7-20.51-19.68-14.42-11.85-28.71-23.18-45.61-31.26-8.4-4.06-17.35-7.11-27.08-9.79-.5-.13-.81-.65-.67-1.15.09-.33.35-.57.67-.65,5-1.25,10.17-1.93,15.34-1.95,15.8-.21,31.39,4.82,45.09,12.5,18.28,10.17,31.73,26.55,43.95,42.9,12.06,16.12,22.15,33.51,30.76,51.6,8.53,17.95,15.69,36.41,21.71,55.31.16.47-.1.98-.57,1.14-.44.15-.91-.07-1.1-.48h0Z"/>
+      <path d="M283.11,302.54c-85.15,0-171.34-19.68-171.34-57.29h18c0,6.62,12.71,17.07,41.11,25.52,29.85,8.88,69.71,13.77,112.23,13.77s82.37-4.89,112.23-13.77c28.4-8.45,41.11-18.91,41.11-25.52h18c0,37.61-86.2,57.29-171.34,57.29Z"/>
+    </svg>
+    © Северный Звук · Мурманск и область · выездной диджей с аппаратурой
+  </div>
+</footer>
 
-<!-- sticky order -->
-<div class="sticky-order" id="stickyOrder">
-  <a class="btn btn-primary" href="https://t.me/plxn_51" target="_blank" rel="noopener">
-    <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
+<!-- sticky cta -->
+<div class="sticky" id="sticky">
+  <a class="btn btn-accent" href="https://t.me/plxn_51" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
     Заказать диджея
   </a>
 </div>
@@ -595,46 +334,23 @@
 (function(){
   "use strict";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  // ---- scroll reveal ----
-  var revealEls = document.querySelectorAll(".reveal");
+  var els = document.querySelectorAll(".rv");
   if ("IntersectionObserver" in window && !reduce) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if (en.isIntersecting) {
-          var el = en.target;
-          el.classList.add("in");
-          if (el.classList.contains("stagger")) {
-            Array.prototype.forEach.call(el.children, function(child, i){
-              child.style.transitionDelay = (i * 60) + "ms";
-            });
-          }
-          io.unobserve(el);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
-    revealEls.forEach(function(el){ io.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add("in"); });
+    var io = new IntersectionObserver(function(en){
+      en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { threshold: .12, rootMargin: "0px 0px -8% 0px" });
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add("in"); }); }
+
+  // hide broken images (keep soft placeholder)
+  document.querySelectorAll("img").forEach(function(i){ i.addEventListener("error", function(){ i.style.visibility="hidden"; }); });
+
+  // subtle sticky CTA after hero
+  var s = document.getElementById("sticky");
+  if (s) {
+    var t = function(){ s.classList.toggle("show", window.scrollY > window.innerHeight * 0.85); };
+    window.addEventListener("scroll", t, { passive:true }); t();
   }
-
-  // ---- hide broken images, keep the polar-day gradient placeholder ----
-  document.querySelectorAll("img").forEach(function(img){
-    img.addEventListener("error", function(){ img.style.display = "none"; });
-  });
-
-  // ---- sticky order button: show after ~60% of first screen ----
-  var sticky = document.getElementById("stickyOrder");
-  if (sticky) {
-    var toggleSticky = function(){
-      sticky.classList.toggle("show", window.scrollY > window.innerHeight * 0.6);
-    };
-    window.addEventListener("scroll", toggleSticky, { passive: true });
-    toggleSticky();
-  }
-
-  // (Smooth in-page scrolling handled by CSS scroll-behavior, which also
-  //  respects prefers-reduced-motion — no JS needed.)
 })();
 </script>
 </body>
