@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Северный Звук — выездной диджей с аппаратурой на праздник · Мурманск</title>
-<meta name="description" content="Выездной диджей «Северного Звука» приезжает со своим звуком и светом на ваш праздник: день рождения, свадьба, корпоратив, open-air. Мурманск и область. От 20 000 ₽.">
+<meta name="description" content="Выездной диджей «Северного Звука» приезжает со своим звуком и светом на ваш праздник: день рождения, свадьба, корпоратив, open-air. Мурманск и область. Диджей — от 7 000 ₽, звук — от 15 000 ₽.">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Северный Звук">
 <meta property="og:url" content="https://plaxinwork51-debug.github.io/open-air-murmansk/">
 <meta property="og:title" content="Северный Звук — выездной диджей с аппаратурой на праздник">
-<meta property="og:description" content="Звук, свет и диджеи под ваше событие. День рождения, свадьба, корпоратив, open-air. Мурманск и область. От 20 000 ₽.">
+<meta property="og:description" content="Звук, свет и диджеи под ваше событие. День рождения, свадьба, корпоратив, open-air. Мурманск и область. Диджей — от 7 000 ₽.">
 <meta property="og:image" content="https://plaxinwork51-debug.github.io/open-air-murmansk/images/og.jpg">
 <meta property="og:image:secure_url" content="https://plaxinwork51-debug.github.io/open-air-murmansk/images/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -18,15 +18,15 @@
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Северный Звук — выездной диджей с аппаратурой">
-<meta name="twitter:description" content="Звук, свет и диджеи под ваше событие. ДР, свадьба, корпоратив, open-air. От 20 000 ₽.">
+<meta name="twitter:description" content="Звук, свет и диджеи под ваше событие. ДР, свадьба, корпоратив, open-air. От 7 000 ₽.">
 <meta name="twitter:image" content="https://plaxinwork51-debug.github.io/open-air-murmansk/images/og.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#ffffff;
+    --bg:#eef2f7;
     --ink:#0d0f12;
     --muted:#646c78;
     --faint:#9aa3ad;
@@ -47,7 +47,26 @@
     font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
     background:var(--bg);color:var(--ink);line-height:1.6;
     -webkit-font-smoothing:antialiased;overflow-x:hidden;
-    font-size:17px;
+    font-size:17px;position:relative;
+  }
+  /* «Жидкое серебро / полярный хром» — технологичный фон во всю страницу */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+    background:
+      radial-gradient(120% 72% at 50% -12%, #ffffff 0%, rgba(255,255,255,0) 58%),
+      radial-gradient(70% 50% at 88% 4%, rgba(18,165,232,.10) 0%, rgba(18,165,232,0) 60%),
+      radial-gradient(60% 48% at 6% 8%, rgba(120,150,190,.10) 0%, rgba(120,150,190,0) 60%),
+      linear-gradient(180deg, #fbfcfe 0%, #eef2f7 46%, #e6ebf2 100%);
+  }
+  /* тонкий «брашированный металл» — еле заметные диагональные блики */
+  body::after{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+    background:repeating-linear-gradient(118deg,
+      rgba(255,255,255,0) 0 46px,
+      rgba(255,255,255,.5) 46px 47px,
+      rgba(255,255,255,0) 47px 94px);
+    -webkit-mask-image:radial-gradient(120% 90% at 50% 0%, #000 0%, transparent 75%);
+            mask-image:radial-gradient(120% 90% at 50% 0%, #000 0%, transparent 75%);
   }
   img{display:block;max-width:100%;}
   a{color:inherit;text-decoration:none;}
@@ -70,9 +89,29 @@
   .btn-primary{background:var(--ink);color:#fff;}
   .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px -16px rgba(13,15,18,.5);}
   .btn-primary:active{transform:scale(.98);}
-  .btn-accent{background:var(--accent);color:#fff;}
-  .btn-accent:hover{transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(18,165,232,.6);}
-  .btn-accent:active{transform:scale(.98);}
+  .btn-accent{
+    position:relative;overflow:hidden;color:#fff;isolation:isolate;
+    background:linear-gradient(135deg,#2bb7f6 0%,#12a5e8 50%,#0b87c4 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.45),
+      inset 0 -14px 24px -16px rgba(6,78,115,.9),
+      0 14px 30px -14px rgba(18,165,232,.55),
+      0 3px 10px -4px rgba(13,40,70,.26);
+  }
+  .btn-accent>*{position:relative;z-index:1;}
+  .btn-accent::after{
+    content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:2;
+    background:linear-gradient(115deg,transparent 28%,rgba(255,255,255,.55) 46%,rgba(255,255,255,0) 62%);
+    transform:translateX(-130%);transition:transform .85s var(--ease);mix-blend-mode:screen;
+  }
+  .btn-accent:hover::after{transform:translateX(130%);}
+  .btn-accent:hover{transform:translateY(-2px);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.5),
+      inset 0 -14px 24px -16px rgba(6,78,115,.9),
+      0 22px 42px -16px rgba(18,165,232,.7),
+      0 4px 12px -4px rgba(13,40,70,.3);}
+  .btn-accent:active{transform:translateY(0) scale(.985);}
   .btn-ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line);}
   .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);}
 
@@ -87,14 +126,24 @@
   .top a.book:hover{border-color:var(--ink);}
 
   /* hero */
-  .hero{padding-top:64px;padding-bottom:40px;text-align:center;}
+  .hero{padding-top:64px;padding-bottom:40px;text-align:center;position:relative;}
+  .hero::before{content:"";position:absolute;left:50%;top:104px;width:min(720px,92%);height:360px;
+    transform:translateX(-50%);z-index:-1;pointer-events:none;
+    background:radial-gradient(56% 56% at 50% 48%, rgba(18,165,232,.18) 0%, rgba(18,165,232,0) 70%);
+    filter:blur(4px);}
   .hero .kicker{display:block;margin-bottom:20px;}
-  .hero h1{font-size:clamp(30px,6vw,56px);max-width:14ch;margin:0 auto 20px;}
-  .hero h1 em{font-style:normal;color:var(--accent-deep);}
-  .hero .lead{max-width:34ch;margin:0 auto 30px;}
+  .hero h1{font-size:clamp(31px,6.2vw,58px);max-width:15ch;margin:0 auto 20px;}
+  .hero h1 .legend{
+    display:inline-block;font-weight:800;text-transform:uppercase;letter-spacing:-.012em;
+    background:linear-gradient(100deg,#0b7fb8 0%,#12a5e8 26%,#5ad1ff 50%,#12a5e8 74%,#0b7fb8 100%);
+    background-size:220% 100%;-webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+    animation:legendShine 5s linear infinite;}
+  @keyframes legendShine{to{background-position:-220% 0;}}
+  .hero .lead{max-width:36ch;margin:0 auto 30px;}
   .hero-cta{display:flex;flex-direction:column;align-items:center;gap:14px;}
-  .hero-cta .price{font-size:14px;color:var(--muted);}
-  .hero-cta .price b{color:var(--ink);font-weight:600;}
+  .hero-cta .note{font-size:14px;color:var(--muted);}
+  .hero-cta .note b{color:var(--ink);font-weight:600;}
   .hero-img{margin:54px auto 0;max-width:560px;border-radius:var(--radius);overflow:hidden;
     aspect-ratio:16/10;background:var(--soft2);box-shadow:0 40px 80px -50px rgba(13,40,70,.5);}
   .hero-img img{width:100%;height:100%;object-fit:cover;}
@@ -133,6 +182,25 @@
   .pkg .btn{height:48px;font-size:15px;}
   .incl{margin-top:34px;text-align:center;color:var(--muted);font-size:15px;max-width:54ch;margin-left:auto;margin-right:auto;}
   .incl b{color:var(--ink);font-weight:500;}
+  .bigline{margin-top:14px;text-align:center;font-size:14.5px;color:var(--muted);}
+  .bigline a{color:var(--accent-deep);border-bottom:1px solid rgba(11,127,184,.35);transition:border-color .2s;}
+  .bigline a:hover{border-color:var(--accent-deep);}
+
+  /* simple price rows */
+  .simple{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px;margin:0 auto 40px;}
+  .srow{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 24px;}
+  .srow .sname{font-size:15px;font-weight:600;color:var(--muted);letter-spacing:.02em;}
+  .srow .sprice{font-family:"Unbounded",sans-serif;font-weight:600;font-size:24px;letter-spacing:-.02em;margin:8px 0 6px;}
+  .srow .sprice small{font-family:"Golos Text",sans-serif;font-size:13px;font-weight:500;color:var(--faint);}
+  .srow p{color:var(--muted);font-size:14px;line-height:1.5;}
+
+  /* tech rental */
+  .tech{text-align:center;}
+  .tech h2{font-size:clamp(22px,4vw,34px);margin-bottom:14px;}
+  .tech .lead{max-width:46ch;margin:0 auto 30px;}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:660px;margin:0 auto 32px;}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-size:14.5px;font-weight:500;}
+  .tech .note{margin-top:16px;font-size:14px;color:var(--muted);}
 
   /* about */
   .about{text-align:center;}
@@ -169,7 +237,7 @@
     section{padding:58px 0;}
     .vals{max-width:420px;}
     .pkgs{grid-template-columns:1fr;}
-    .pkg.feat{order:-1;}
+    .simple{grid-template-columns:1fr;max-width:420px;}
     .gallery{gap:10px;}
     .gallery figcaption{font-size:12.5px;left:10px;bottom:9px;}
     .hero-img{margin-top:42px;}
@@ -177,6 +245,8 @@
   @media (prefers-reduced-motion:reduce){
     .rv{opacity:1;transform:none;transition:none;}
     html{scroll-behavior:auto;}
+    .hero h1 .legend{animation:none;background-position:0 0;}
+    .btn-accent::after{display:none;}
   }
 </style>
 </head>
@@ -213,15 +283,15 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="kicker rv">Выездной диджей · Мурманск и область</span>
-    <h1 class="display rv">Вечеринку будут <em>вспоминать</em></h1>
-    <p class="lead rv">Привозим диджея, звук и свет на любой ваш праздник — от дачи до сопок над морем.</p>
+    <span class="kicker rv">Вечеринка на выезд · Мурманск и область</span>
+    <h1 class="display rv">Ваша вечеринка станет <span class="legend">легендарной</span></h1>
+    <p class="lead rv">Привозим вечеринку под ключ — диджей, звук и свет на любой площадке: от дачи до сопок над морем.</p>
     <div class="hero-cta rv">
       <a class="btn btn-accent" href="https://t.me/plxn_51" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
-        Заказать диджея
+        Заказать вечеринку
       </a>
-      <span class="price">от <b>20 000 ₽</b> · ответим в Telegram за пару минут</span>
+      <span class="note"><b>Диджей — от 7 000 ₽</b> · ответим в Telegram за пару минут</span>
     </div>
     <div class="hero-img rv">
       <img src="images/photo1.jpg" alt="Выезд Северного Звука на берегу залива — диджей и MC за пультом" loading="eager">
@@ -237,7 +307,7 @@
 <!-- ESSENCE + OCCASIONS -->
 <section class="essence">
   <div class="wrap center">
-    <h2 class="display rv">Любой повод — повод позвать диджея</h2>
+    <h2 class="display rv">Любой повод — повод устроить вечеринку</h2>
     <p class="lead rv">День рождения, свадьба или просто вечер с друзьями на природе. Вы выбираете дату и пакет — мы привозим музыку, свет и человека за пультом, который чувствует зал.</p>
     <div class="gallery rv">
       <figure><img src="images/photo4.jpg" alt="Праздник на турбазе" loading="lazy"><figcaption>На турбазе</figcaption></figure>
@@ -251,30 +321,62 @@
 <!-- PACKAGES -->
 <section class="packages">
   <div class="wrap">
-    <h2 class="display rv">Пакеты</h2>
-    <p class="sub rv">Цена стартовая — точную смету считаем под вашу локацию и число гостей.</p>
+    <h2 class="display rv">Цены</h2>
+    <p class="sub rv">Цены стартовые — точную смету считаем под вашу локацию и число гостей. Бесплатно.</p>
+    <div class="simple rv">
+      <div class="srow">
+        <div class="sname">Просто диджей</div>
+        <div class="sprice">от 7 000 <small>₽</small></div>
+        <p>Диджей на ваше мероприятие, когда звук на площадке уже есть.</p>
+      </div>
+      <div class="srow">
+        <div class="sname">Просто звук</div>
+        <div class="sprice">от 15 000 <small>₽</small></div>
+        <p>Привезём, подключим и настроим аппаратуру на вечеринку.</p>
+      </div>
+    </div>
     <div class="pkgs">
       <article class="pkg rv">
-        <span class="pname">Диджей</span>
-        <div class="pprice">20 000 <small>₽</small></div>
-        <p class="pdesc">Диджей с пультом и плейлистом, собранным под вас. Для камерных праздников и площадок со своим звуком.</p>
+        <span class="pname">Диджей + компакт-звук</span>
+        <div class="pprice">15 000 <small>₽</small></div>
+        <p class="pdesc">Диджей и компактный комплект звука. Квартирник, дача, кафе — компания до 30 гостей.</p>
         <a class="btn btn-ghost" href="https://t.me/plxn_51" target="_blank" rel="noopener">Узнать цену</a>
       </article>
       <article class="pkg feat rv">
         <span class="tag">берут чаще всего</span>
-        <span class="pname">Под ключ · звук + свет</span>
-        <div class="pprice">100 000 <small>₽</small></div>
-        <p class="pdesc">Диджей и полный сетап: звук и свет. Та самая атмосфера, как на наших open-air. Под свадьбы и большие праздники.</p>
+        <span class="pname">Диджей + полный звук</span>
+        <div class="pprice">30 000 <small>₽</small></div>
+        <p class="pdesc">Диджей, акустика с сабвуферами и радиомикрофон. День рождения, банкет, турбаза — до 80 гостей.</p>
         <a class="btn btn-accent" href="https://t.me/plxn_51" target="_blank" rel="noopener">Забронировать дату</a>
       </article>
       <article class="pkg rv">
-        <span class="pname">Диджей + звук</span>
+        <span class="pname">Под ключ · звук + свет</span>
         <div class="pprice">60 000 <small>₽</small></div>
-        <p class="pdesc">Диджей и аппаратура: колонки и микрофон. Под день рождения, небольшой банкет, дачу или турбазу.</p>
+        <p class="pdesc">Полный сетап: звук, световое шоу и диджей. Атмосфера как на наших open-air — свадьбы и большие праздники.</p>
         <a class="btn btn-ghost" href="https://t.me/plxn_51" target="_blank" rel="noopener">Рассчитать смету</a>
       </article>
     </div>
     <p class="incl rv">В любой пакет входит: <b>своя команда</b>, плейлист под вашу аудиторию и выезд на локацию заранее. Никакого «диджея с флешкой».</p>
+    <p class="bigline rv">Нужен масштаб? Опен-эйр, городской праздник или корпоратив на сотни гостей — <a href="https://t.me/plxn_51" target="_blank" rel="noopener">соберём смету под задачу</a>.</p>
+  </div>
+</section>
+
+<!-- TECH RENTAL -->
+<section class="tech">
+  <div class="wrap">
+    <h2 class="display rv">Вся техника есть и по отдельности</h2>
+    <p class="lead rv">Аренда с доставкой, подключением и настройкой — от пары колонок до комплекта на несколько сотен человек.</p>
+    <div class="chips rv">
+      <span class="chip">Акустика и сабвуферы</span>
+      <span class="chip">DJ-пульт и оборудование</span>
+      <span class="chip">Радиомикрофоны</span>
+      <span class="chip">Световые головы</span>
+      <span class="chip">LED-бары и блайндеры</span>
+      <span class="chip">Сцена 6×4 м</span>
+      <span class="chip">Коммутация и кабели</span>
+    </div>
+    <a class="btn btn-primary rv" href="https://t.me/plxn_51" target="_blank" rel="noopener">Уточнить прайс в Telegram</a>
+    <p class="note rv">Напишите, что за событие — подскажем, что нужно, и посчитаем аренду.</p>
   </div>
 </section>
 
@@ -326,7 +428,7 @@
 <div class="sticky" id="sticky">
   <a class="btn btn-accent" href="https://t.me/plxn_51" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.3-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.4l-4.9-1.5c-1.1-.3-1.1-1 .2-1.5l19.2-7.4c.9-.3 1.7.2 1.4 1.3z"/></svg>
-    Заказать диджея
+    Заказать вечеринку
   </a>
 </div>
 
